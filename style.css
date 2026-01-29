@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.wrapper {
+    background-color: rgb(19, 19, 20);
+    border-radius: 0.5rem;
+    /* border: 1px solid rgba(243, 142, 64, 0.268); */
+    box-shadow: 1px 1px 5px 5px rgba(231, 60, 8, 0.182);
+    padding: 2rem;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .form__title {
+            text-align: center;
+            color: rgb(231, 60, 8);
+        }
+
+        .form__label {
+            display: grid;
+            gap: 0.5rem;
+
+            .form__input {
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                background-color: rgb(223, 223, 223);
+                /* border: 2px solid rgb(231, 60, 8); */
+                border: none;
+                box-shadow: 1px 1px 5px 5px rgba(231, 60, 8, 0.182);
+                border-radius: 0.5rem;
+                color: rgb(18, 18, 18);
+            }
+        }
+
+        .form__label--row {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            .form__checkbox {
+                width: 1.5rem;
+                aspect-ratio: 1;
+            }
+        }
+
+        .form__btn {
+            cursor: pointer;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            background-color: rgb(231, 60, 8);
+            color: whitesmoke;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .form__text {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .form__btn--empty {
+            border: 2px solid rgb(231, 60, 8);
+            font-weight: 400;
+            color: rgb(231, 60, 8);
+            background-color: transparent;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}

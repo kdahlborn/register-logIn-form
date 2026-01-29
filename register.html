@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Log in page</title>
+        <title>Register Account</title>
         <link rel="stylesheet" href="./style.css" />
         <script src="./script.js"></script>
     </head>
     <body>
         <section class="wrapper">
             <form class="form" id="form">
-                <h1 class="form__title">Register</h1>
+                <h1 class="form__title">Register Account</h1>
                 <p class="form__error-msg" id="errorMsg"></p>
                 <label class="form__label">
                     Username:
@@ -24,15 +24,25 @@
                     Repeat password:
                     <input type="password" id="password" class="form__input" />
                 </label>
-                <label class="form__label">
+                <label class="form__label form__label--row">
                     I have read and accept the terms of service
-                    <input type="checkbox" />
+                    <input
+                        type="checkbox"
+                        id="checkbox"
+                        class="form__checkbox"
+                    />
                 </label>
-                <button class="form__btn form__btn--empty" id="registerBtn">
-                    Register
+                <button class="form__btn" id="registerBtn">
+                    Register Account
                 </button>
                 <p class="form__text">Already have an account?</p>
-                <button class="form__btn" id="loginBtn">Log in</button>
+                <a
+                    href="./index.html"
+                    class="form__btn form__btn--empty"
+                    id="loginBtn"
+                >
+                    Login
+                </a>
             </form>
         </section>
     </body>
