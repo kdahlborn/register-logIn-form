@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Log in page</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <section class="wrapper">
+            <form class="form" id="form">
+                <h1 class="form__title">Log in</h1>
+                <p class="form__error-msg" id="errorMsg"></p>
+                <label class="form__label">
+                    Username:
+                    <input type="text" id="userName" class="form__input" />
+                </label>
+                <label class="form__label">
+                    Password:
+                    <input type="password" id="password" class="form__input" />
+                </label>
+                <button class="form__btn" id="loginBtn">Log in</button>
+                <p class="form__text">Dont have an account?</p>
+                <button class="form__btn form__btn--empty" id="registerBtn">
+                    Register
+                </button>
+            </form>
+        </section>
+    </body>
+</html>
